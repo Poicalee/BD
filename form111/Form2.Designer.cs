@@ -40,6 +40,7 @@ namespace form111
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textGene = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTitle
@@ -130,11 +131,22 @@ namespace form111
             this.textGene.Text = "Gatunek";
             this.textGene.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(920, 464);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 23);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Wyloguj";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 520);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.textGene);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -165,5 +177,6 @@ namespace form111
         private Button button1;
         private Button button2;
         private TextBox textGene;
+        private Button button3;
     }
 }

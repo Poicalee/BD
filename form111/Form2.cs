@@ -52,5 +52,13 @@ namespace form111
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 form = new Form3();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }
