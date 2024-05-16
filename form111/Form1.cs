@@ -6,6 +6,7 @@ namespace form111
 {
     public partial class Form1 : Form
     {
+        
         private string storedLogin;
         private string storedPassword;
 
@@ -22,10 +23,10 @@ namespace form111
             }
         }
 
-        private void button2_click(object sender, EventArgs e)
+        private void zalogujGosc_click(object sender, EventArgs e)
         {
             this.Hide();
-            Form2 form = new Form2();
+            Form5 form = new Form5();
             form.ShowDialog();
             this.Close();
         }
@@ -98,6 +99,11 @@ namespace form111
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

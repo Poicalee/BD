@@ -15,8 +15,8 @@ namespace form111
         public Form2()
         {
             InitializeComponent();
-            btnAddBook.Click += BtnAddBook_Click;
-            btnRemoveBook.Click += BtnRemoveBook_Click;
+            dodajKsiazkeAction.Click += BtnAddBook_Click;
+            usunKsiazke.Click += BtnRemoveBook_Click;
         }
 
         private void BtnAddBook_Click(object sender, EventArgs e)
@@ -37,16 +37,7 @@ namespace form111
                 listBoxBooks.Items.RemoveAt(listBoxBooks.SelectedIndex);
             }
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -57,6 +48,14 @@ namespace form111
         {
             this.Hide();
             Form3 form = new Form3();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void wypozycKsiazke_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form5 form = new Form5();
             form.ShowDialog();
             this.Close();
         }
