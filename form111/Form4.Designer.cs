@@ -32,7 +32,7 @@ namespace form111
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.konto = new System.Windows.Forms.Button();
+            this.menuButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,26 +45,26 @@ namespace form111
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.konto);
+            this.panel1.Controls.Add(this.menuButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-4, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(961, 70);
             this.panel1.TabIndex = 0;
             // 
-            // konto
+            // menuButton
             // 
-            this.konto.BackColor = System.Drawing.Color.MintCream;
-            this.konto.FlatAppearance.BorderColor = System.Drawing.Color.MintCream;
-            this.konto.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.konto.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.konto.Location = new System.Drawing.Point(852, 19);
-            this.konto.Margin = new System.Windows.Forms.Padding(2);
-            this.konto.Name = "konto";
-            this.konto.Size = new System.Drawing.Size(78, 32);
-            this.konto.TabIndex = 13;
-            this.konto.Text = "Konto\r\n";
-            this.konto.UseVisualStyleBackColor = false;
+            this.menuButton.BackColor = System.Drawing.Color.MintCream;
+            this.menuButton.FlatAppearance.BorderColor = System.Drawing.Color.MintCream;
+            this.menuButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.menuButton.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.menuButton.Location = new System.Drawing.Point(868, 19);
+            this.menuButton.Margin = new System.Windows.Forms.Padding(2);
+            this.menuButton.Name = "menuButton";
+            this.menuButton.Size = new System.Drawing.Size(78, 32);
+            this.menuButton.TabIndex = 13;
+            this.menuButton.Text = "Menu";
+            this.menuButton.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -79,7 +79,7 @@ namespace form111
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(47, 123);
+            this.label2.Location = new System.Drawing.Point(47, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 23);
             this.label2.TabIndex = 1;
@@ -88,7 +88,7 @@ namespace form111
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(47, 163);
+            this.label4.Location = new System.Drawing.Point(47, 148);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(145, 23);
             this.label4.TabIndex = 3;
@@ -98,7 +98,7 @@ namespace form111
             // listViewLogin
             // 
             this.listViewLogin.HideSelection = false;
-            this.listViewLogin.Location = new System.Drawing.Point(183, 123);
+            this.listViewLogin.Location = new System.Drawing.Point(183, 108);
             this.listViewLogin.Name = "listViewLogin";
             this.listViewLogin.Size = new System.Drawing.Size(145, 20);
             this.listViewLogin.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace form111
             // usunKonto
             // 
             this.usunKonto.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.usunKonto.Location = new System.Drawing.Point(765, 114);
+            this.usunKonto.Location = new System.Drawing.Point(765, 125);
             this.usunKonto.Name = "usunKonto";
             this.usunKonto.Size = new System.Drawing.Size(113, 29);
             this.usunKonto.TabIndex = 7;
@@ -135,6 +135,7 @@ namespace form111
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -149,7 +150,7 @@ namespace form111
 
         private System.Windows.Forms.Label label2;
 
-        private System.Windows.Forms.Button konto;
+        private System.Windows.Forms.Button menuButton;
 
         private System.Windows.Forms.Label label1;
 

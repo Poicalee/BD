@@ -223,3 +223,5 @@ C:\Users\gubblebum\RiderProjects\BD\form111\obj\Debug\form111.exe
 C:\Users\gubblebum\RiderProjects\BD\form111\obj\Debug\form111.pdb
 C:\Users\gubblebum\RiderProjects\BD\form111\obj\Debug\form111.Form4.resources
 C:\Users\gubblebum\RiderProjects\BD\form111\obj\Debug\form111.Form5.resources
+C:\Users\gubblebum\RiderProjects\BD\form111\obj\Debug\form111.Form6.resources
+C:\Users\gubblebum\RiderProjects\BD\form111\obj\Debug\form111.Form7.resources

@@ -77,7 +77,7 @@ namespace form111
             this.menuButton.TabIndex = 0;
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = true;
-            this.menuButton.Click += new System.EventHandler(this.menuButton_click); 
+            this.menuButton.Click += new System.EventHandler(this.menuButton_click);
             // 
             // listBoxPrzegladKsiazek
             // 
@@ -98,6 +98,7 @@ namespace form111
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -67,6 +67,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(141, 20);
             this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
             // 
             // Login
             // 
@@ -90,7 +91,7 @@
             this.Hasło.Name = "Hasło";
             this.Hasło.Size = new System.Drawing.Size(46, 19);
             this.Hasło.TabIndex = 4;
-            this.Hasło.Text = "Haslo:";
+            this.Hasło.Text = "Hasło:";
             // 
             // zalogujGosc
             // 

@@ -46,21 +46,23 @@ namespace form111
 
             if (CheckCredentials(login, password))
             {
-                MessageBox.Show("Login successful.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Logowanie powiodło się", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Form2 form = new Form2();
+                Form7 form = new Form7();
                 form.ShowDialog();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Invalid login or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nieprawidłowy login lub hasło", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private string[] LoadLoginAndPasswordFromFile()
         {
-            string filePath = "C:\\Users\\Karol\\Desktop\\loginy.txt";
+            //string filePath = "C:\\Users\\Karol\\Desktop\\loginy.txt";
+            //nie wiem czemu nie działa z relatywną ścieżką, ale i tak będzie brał z baz danych to wywalone
+            string filePath = "C:\\Users\\gubblebum\\RiderProjects\\BD\\form111\\pass.txt";
 
             try
             {
@@ -103,7 +105,12 @@ namespace form111
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+           
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            
         }
     }
 }
