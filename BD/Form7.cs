@@ -9,10 +9,14 @@ namespace form111
         {
             InitializeComponent();
         }
-        //
-        // private void infoBttn_click(object sender, EventArgs e)
-        // {
-        //     MessageBox.Show("Informacje o programie :3", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        // }
+
+
+        private void przegladajKsiazki_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 form = new Form2();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

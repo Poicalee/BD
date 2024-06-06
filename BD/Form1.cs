@@ -1,26 +1,15 @@
 ﻿using System;
-using System.IO;
 using System.Windows.Forms;
+using Npgsql;
+using BD1.Models;
 
 namespace form111
 {
     public partial class Form1 : Form
     {
-        
-        private string storedLogin;
-        private string storedPassword;
-
         public Form1()
         {
             InitializeComponent();
-
-            // Wczytanie danych z pliku po utworzeniu formularza
-            string[] loginAndPassword = LoadLoginAndPasswordFromFile();
-            if (loginAndPassword != null && loginAndPassword.Length == 2)
-            {
-                storedLogin = loginAndPassword[0];
-                storedPassword = loginAndPassword[1];
-            }
         }
 
         private void zalogujGosc_click(object sender, EventArgs e)
@@ -58,46 +47,33 @@ namespace form111
             }
         }
 
-        private string[] LoadLoginAndPasswordFromFile()
+        private bool CheckCredentials(string login, string password)
         {
-            //string filePath = "C:\\Users\\Karol\\Desktop\\loginy.txt";
-            //nie wiem czemu nie działa z relatywną ścieżką, ale i tak będzie brał z baz danych to wywalone
-            string filePath = "C:\\Users\\gubblebum\\RiderProjects\\BD\\form111\\pass.txt";
+            string connectionString = "Host=localhost;Username=postgres;Password=Kubek234;Database=postgres";
+            string functionCall = "SELECT check_credentials(@login, @password)";
 
             try
             {
-                if (File.Exists(filePath))
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                 {
-                    string[] lines = File.ReadAllLines(filePath);
-                    if (lines.Length >= 2)
+                    connection.Open();
+                    using (NpgsqlCommand command = new NpgsqlCommand(functionCall, connection))
                     {
-                        string login = lines[0].Substring(lines[0].IndexOf(":") + 2);
-                        string password = lines[1].Substring(lines[1].IndexOf(":") + 2);
+                        command.Parameters.AddWithValue("@login", login);
+                        command.Parameters.AddWithValue("@password", password);
 
-                        return new string[] { login, password };
+                        bool isValid = (bool)command.ExecuteScalar();
+                        return isValid;
                     }
                 }
-
-                return null;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while loading login and password from file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-        }
-
-        private bool CheckCredentials(string login, string password)
-        {
-            if (login == storedLogin && password == storedPassword)
-            {
-                return true;
-            }
-            else
-            {
+                MessageBox.Show("An error occurred while checking credentials: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -105,12 +81,12 @@ namespace form111
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

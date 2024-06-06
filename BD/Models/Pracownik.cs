@@ -16,6 +16,9 @@ public partial class Pracownik
     public string? EmployeeAddress { get; set; }
 
     public string? EmployeePhone { get; set; }
+    public string? Login { get; set; }
+    public string? Password { get; set; }
+
 
     public virtual ICollection<Wypożyczenie> Wypożyczenies { get; set; } = new List<Wypożyczenie>();
 }

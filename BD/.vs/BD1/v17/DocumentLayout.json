@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|c:\\users\\karol\\source\\repos\\bd\\bd\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\models\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:models\\postgrescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\models\\czytelnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:models\\czytelnik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\models\\ksi\u0105zki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:models\\ksi\u0105zki.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|C:\\Users\\Karol\\source\\repos\\BD\\BD\\form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{90D8C4D5-4F54-4298-B81E-E515AC25D8BA}|BD1.csproj|solutionrelative:form7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form1.cs [Projekt]",
+              "RelativeToolTip": "Form1.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:40:59.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PostgresContext.cs",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\PostgresContext.cs",
+              "RelativeDocumentMoniker": "Models\\PostgresContext.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\PostgresContext.cs",
+              "RelativeToolTip": "Models\\PostgresContext.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAFkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:25:03.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Czytelnik.cs",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\Czytelnik.cs",
+              "RelativeDocumentMoniker": "Models\\Czytelnik.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\Czytelnik.cs",
+              "RelativeToolTip": "Models\\Czytelnik.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:18:21.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Ksi\u0105zki.cs",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\Ksi\u0105zki.cs",
+              "RelativeDocumentMoniker": "Models\\Ksi\u0105zki.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\Ksi\u0105zki.cs",
+              "RelativeToolTip": "Models\\Ksi\u0105zki.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:18:11.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Autor.cs",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\Autor.cs",
+              "RelativeDocumentMoniker": "Models\\Autor.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Models\\Autor.cs",
+              "RelativeToolTip": "Models\\Autor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T13:12:32.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAA6wHsAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:56:10.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form2.cs [Projekt]",
+              "RelativeToolTip": "Form2.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:56:07.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA8wEIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:51:08.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form7.cs",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form7.cs",
+              "RelativeDocumentMoniker": "Form7.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form7.cs",
+              "RelativeToolTip": "Form7.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAgwBUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:50:19.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form7.cs [Projekt]",
+              "DocumentMoniker": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form7.cs",
+              "RelativeDocumentMoniker": "Form7.cs",
+              "ToolTip": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\Form7.cs [Projekt]",
+              "RelativeToolTip": "Form7.cs [Projekt]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T12:21:21.859Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

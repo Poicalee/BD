@@ -1,0 +1,72 @@
+create view allbooksview(title, publication_year, author, genre) as
+SELECT k.title,
+       k.publication_year,
+       a.author_name AS author,
+       k.genre
+FROM "ksiązki" k
+         JOIN autor a ON k.author_id = a.author_id;
+
+alter table allbooksview
+    owner to postgres;
+
+create procedure add_book_and_author(IN p_title character varying, IN p_author_name character varying, IN p_year integer, IN p_genre character varying)
+    language plpgsql
+as
+$$
+DECLARE
+    v_author_id INT;
+BEGIN
+    -- Pobierz maksymalny identyfikator autora
+    SELECT COALESCE(MAX(author_id), 0) + 1 INTO v_author_id FROM autor;
+
+    -- Dodaj nowego autora
+    INSERT INTO autor (author_id, author_name)
+    VALUES (v_author_id, p_author_name);
+
+    -- Dodaj książkę
+    INSERT INTO ksiązki (title, author_id, publication_year, genre, available)
+    VALUES (p_title, v_author_id, p_year, p_genre, TRUE);
+
+    -- Komunikat o sukcesie
+    RAISE NOTICE 'Książka "%", autor: "%", rok: %, gatunek: % została dodana.', p_title, p_author_name, p_year, p_genre;
+END;
+$$;
+
+alter procedure add_book_and_author(varchar, varchar, integer, varchar) owner to postgres;
+
+create function check_credentials(p_login character varying, p_password character varying) returns boolean
+    language plpgsql
+as
+$$
+DECLARE
+    is_valid BOOLEAN;
+BEGIN
+    SELECT TRUE
+    INTO is_valid
+    FROM pracownik
+    WHERE employee_name = p_login AND password = p_password;
+
+    RETURN COALESCE(is_valid, FALSE);
+END;
+$$;
+
+alter function check_credentials(varchar, varchar) owner to postgres;
+
+create procedure usun_ksiazke(IN p_tytul character varying)
+    language plpgsql
+as
+$$
+BEGIN
+    -- Usuń książkę o podanym tytule
+    DELETE FROM ksiązki WHERE title = p_tytul;
+
+    -- Komunikat o sukcesie
+    RAISE NOTICE 'Książka "%s" została usunięta.', p_tytul;
+END;
+$$;
+
+alter procedure usun_ksiazke(varchar) owner to postgres;
+
+
+
+

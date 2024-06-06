@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Karol\\Desktop\\Nowy folder (3)\\BD1\\BD1\\BD1.csproj": {}
+    "C:\\Users\\Karol\\source\\repos\\BD\\BD\\BD1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Karol\\Desktop\\Nowy folder (3)\\BD1\\BD1\\BD1.csproj": {
+    "C:\\Users\\Karol\\source\\repos\\BD\\BD\\BD1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karol\\Desktop\\Nowy folder (3)\\BD1\\BD1\\BD1.csproj",
+        "projectUniqueName": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\BD1.csproj",
         "projectName": "BD1",
-        "projectPath": "C:\\Users\\Karol\\Desktop\\Nowy folder (3)\\BD1\\BD1\\BD1.csproj",
+        "projectPath": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\BD1.csproj",
         "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karol\\Desktop\\Nowy folder (3)\\BD1\\BD1\\obj\\",
+        "outputPath": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

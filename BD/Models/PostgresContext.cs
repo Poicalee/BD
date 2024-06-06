@@ -111,6 +111,12 @@ public partial class PostgresContext : DbContext
             entity.Property(e => e.EmployeeSalary)
                 .HasPrecision(10, 2)
                 .HasColumnName("employee_salary");
+            entity.Property(e => e.Login)
+               .HasMaxLength(255)
+               .HasColumnName("login");
+            entity.Property(e => e.Password)
+               .HasMaxLength(30)
+               .HasColumnName("password");
         });
 
         modelBuilder.Entity<Wypożyczenie>(entity =>

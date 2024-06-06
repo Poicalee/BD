@@ -31,88 +31,89 @@ namespace form111
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.przegladajKsiazki = new System.Windows.Forms.Button();
-            this.kontoButt = new System.Windows.Forms.Button();
-            this.wypozyczKsiazke = new System.Windows.Forms.Button();
-            this.info = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            label1 = new Label();
+            przegladajKsiazki = new Button();
+            kontoButt = new Button();
+            wypozyczKsiazke = new Button();
+            info = new Button();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-6, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(956, 73);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(-6, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(956, 73);
+            panel1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.MintCream;
-            this.label1.Location = new System.Drawing.Point(56, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Biblioteka";
+            label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label1.ForeColor = Color.MintCream;
+            label1.Location = new Point(56, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(143, 30);
+            label1.TabIndex = 0;
+            label1.Text = "Biblioteka";
             // 
             // przegladajKsiazki
             // 
-            this.przegladajKsiazki.Location = new System.Drawing.Point(86, 154);
-            this.przegladajKsiazki.Name = "przegladajKsiazki";
-            this.przegladajKsiazki.Size = new System.Drawing.Size(125, 42);
-            this.przegladajKsiazki.TabIndex = 1;
-            this.przegladajKsiazki.Text = "Przeglądaj książki";
-            this.przegladajKsiazki.UseVisualStyleBackColor = true;
+            przegladajKsiazki.Location = new Point(86, 154);
+            przegladajKsiazki.Name = "przegladajKsiazki";
+            przegladajKsiazki.Size = new Size(125, 42);
+            przegladajKsiazki.TabIndex = 1;
+            przegladajKsiazki.Text = "Przeglądaj książki";
+            przegladajKsiazki.UseVisualStyleBackColor = true;
+            przegladajKsiazki.Click += przegladajKsiazki_Click;
             // 
             // kontoButt
             // 
-            this.kontoButt.Location = new System.Drawing.Point(366, 154);
-            this.kontoButt.Name = "kontoButt";
-            this.kontoButt.Size = new System.Drawing.Size(125, 42);
-            this.kontoButt.TabIndex = 3;
-            this.kontoButt.Text = "Konto";
-            this.kontoButt.UseVisualStyleBackColor = true;
+            kontoButt.Location = new Point(366, 154);
+            kontoButt.Name = "kontoButt";
+            kontoButt.Size = new Size(125, 42);
+            kontoButt.TabIndex = 3;
+            kontoButt.Text = "Konto";
+            kontoButt.UseVisualStyleBackColor = true;
             // 
             // wypozyczKsiazke
             // 
-            this.wypozyczKsiazke.Location = new System.Drawing.Point(86, 219);
-            this.wypozyczKsiazke.Name = "wypozyczKsiazke";
-            this.wypozyczKsiazke.Size = new System.Drawing.Size(125, 52);
-            this.wypozyczKsiazke.TabIndex = 4;
-            this.wypozyczKsiazke.Text = "Wypożycz książkę";
-            this.wypozyczKsiazke.UseVisualStyleBackColor = true;
+            wypozyczKsiazke.Location = new Point(86, 219);
+            wypozyczKsiazke.Name = "wypozyczKsiazke";
+            wypozyczKsiazke.Size = new Size(125, 52);
+            wypozyczKsiazke.TabIndex = 4;
+            wypozyczKsiazke.Text = "Wypożycz książkę";
+            wypozyczKsiazke.UseVisualStyleBackColor = true;
             // 
             // info
             // 
-            this.info.Location = new System.Drawing.Point(366, 229);
-            this.info.Name = "info";
-            this.info.Size = new System.Drawing.Size(125, 42);
-            this.info.TabIndex = 5;
-            this.info.Text = "Informacje";
-            this.info.UseVisualStyleBackColor = true;
+            info.Location = new Point(366, 229);
+            info.Name = "info";
+            info.Size = new Size(125, 42);
+            info.TabIndex = 5;
+            info.Text = "Informacje";
+            info.UseVisualStyleBackColor = true;
             // 
             // Form7
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.info);
-            this.Controls.Add(this.wypozyczKsiazke);
-            this.Controls.Add(this.kontoButt);
-            this.Controls.Add(this.przegladajKsiazki);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form7";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form7";
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MintCream;
+            ClientSize = new Size(600, 366);
+            Controls.Add(info);
+            Controls.Add(wypozyczKsiazke);
+            Controls.Add(kontoButt);
+            Controls.Add(przegladajKsiazki);
+            Controls.Add(panel1);
+            Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            Margin = new Padding(4);
+            Name = "Form7";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form7";
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         private System.Windows.Forms.Button wypozyczKsiazke;
