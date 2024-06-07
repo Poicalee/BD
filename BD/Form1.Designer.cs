@@ -28,136 +28,130 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.zaloguj = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.Login = new System.Windows.Forms.Label();
-            this.Hasło = new System.Windows.Forms.Label();
-            this.zalogujGosc = new System.Windows.Forms.Button();
-            this.stworzKonto = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            zaloguj = new Button();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            Login = new Label();
+            Hasło = new Label();
+            zalogujGosc = new Button();
+            stworzKonto = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // zaloguj
             // 
-            this.zaloguj.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.zaloguj.Location = new System.Drawing.Point(241, 272);
-            this.zaloguj.Margin = new System.Windows.Forms.Padding(2);
-            this.zaloguj.Name = "zaloguj";
-            this.zaloguj.Size = new System.Drawing.Size(121, 53);
-            this.zaloguj.TabIndex = 0;
-            this.zaloguj.Text = "Zaloguj";
-            this.zaloguj.UseVisualStyleBackColor = true;
-            this.zaloguj.Click += new System.EventHandler(this.btnLogin_Click);
+            zaloguj.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            zaloguj.Location = new Point(321, 418);
+            zaloguj.Name = "zaloguj";
+            zaloguj.Size = new Size(161, 67);
+            zaloguj.TabIndex = 0;
+            zaloguj.Text = "Zaloguj";
+            zaloguj.UseVisualStyleBackColor = true;
+            zaloguj.Click += btnLogin_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(245, 129);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 20);
-            this.textBox1.TabIndex = 1;
+            textBox1.Location = new Point(327, 198);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(187, 27);
+            textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(245, 194);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(141, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged_1);
+            textBox2.Location = new Point(327, 298);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(187, 27);
+            textBox2.TabIndex = 2;
+            textBox2.TextChanged += textBox2_TextChanged_1;
             // 
             // Login
             // 
-            this.Login.AutoSize = true;
-            this.Login.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Login.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.Login.Location = new System.Drawing.Point(170, 128);
-            this.Login.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(46, 19);
-            this.Login.TabIndex = 3;
-            this.Login.Text = "Login:\r\n";
-            this.Login.Click += new System.EventHandler(this.label1_Click);
+            Login.AutoSize = true;
+            Login.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            Login.ImageAlign = ContentAlignment.BottomLeft;
+            Login.Location = new Point(227, 197);
+            Login.Name = "Login";
+            Login.Size = new Size(60, 23);
+            Login.TabIndex = 3;
+            Login.Text = "Login:\r\n";
+            Login.Click += label1_Click;
             // 
             // Hasło
             // 
-            this.Hasło.AutoSize = true;
-            this.Hasło.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Hasło.Location = new System.Drawing.Point(170, 193);
-            this.Hasło.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Hasło.Name = "Hasło";
-            this.Hasło.Size = new System.Drawing.Size(46, 19);
-            this.Hasło.TabIndex = 4;
-            this.Hasło.Text = "Hasło:";
+            Hasło.AutoSize = true;
+            Hasło.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            Hasło.Location = new Point(227, 297);
+            Hasło.Name = "Hasło";
+            Hasło.Size = new Size(60, 23);
+            Hasło.TabIndex = 4;
+            Hasło.Text = "Hasło:";
             // 
             // zalogujGosc
             // 
-            this.zalogujGosc.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.zalogujGosc.Location = new System.Drawing.Point(106, 272);
-            this.zalogujGosc.Margin = new System.Windows.Forms.Padding(2);
-            this.zalogujGosc.Name = "zalogujGosc";
-            this.zalogujGosc.Size = new System.Drawing.Size(114, 53);
-            this.zalogujGosc.TabIndex = 5;
-            this.zalogujGosc.Text = "Zaloguj jako gość\r\n";
-            this.zalogujGosc.UseVisualStyleBackColor = true;
-            this.zalogujGosc.Click += new System.EventHandler(this.zalogujGosc_click);
+            zalogujGosc.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            zalogujGosc.Location = new Point(135, 418);
+            zalogujGosc.Name = "zalogujGosc";
+            zalogujGosc.Size = new Size(152, 67);
+            zalogujGosc.TabIndex = 5;
+            zalogujGosc.Text = "Zaloguj jako gość\r\n";
+            zalogujGosc.UseVisualStyleBackColor = true;
+            zalogujGosc.Click += zalogujGosc_click;
             // 
             // stworzKonto
             // 
-            this.stworzKonto.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.stworzKonto.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.stworzKonto.Location = new System.Drawing.Point(385, 272);
-            this.stworzKonto.Margin = new System.Windows.Forms.Padding(2);
-            this.stworzKonto.Name = "stworzKonto";
-            this.stworzKonto.Size = new System.Drawing.Size(119, 53);
-            this.stworzKonto.TabIndex = 6;
-            this.stworzKonto.Text = "Stwórz konto";
-            this.stworzKonto.UseVisualStyleBackColor = false;
-            this.stworzKonto.Click += new System.EventHandler(this.button3_click);
+            stworzKonto.BackColor = Color.MintCream;
+            stworzKonto.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            stworzKonto.Location = new Point(513, 418);
+            stworzKonto.Name = "stworzKonto";
+            stworzKonto.Size = new Size(159, 67);
+            stworzKonto.TabIndex = 6;
+            stworzKonto.Text = "Stwórz konto";
+            stworzKonto.UseVisualStyleBackColor = false;
+            stworzKonto.Click += button3_click;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-6, -4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(611, 72);
-            this.panel1.TabIndex = 7;
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(-8, -6);
+            panel1.Margin = new Padding(4, 5, 4, 5);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(815, 111);
+            panel1.TabIndex = 7;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.MintCream;
-            this.label1.Location = new System.Drawing.Point(36, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Biblioteka";
+            label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label1.ForeColor = Color.MintCream;
+            label1.Location = new Point(48, 35);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(168, 43);
+            label1.TabIndex = 0;
+            label1.Text = "Biblioteka";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(605, 391);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.stworzKonto);
-            this.Controls.Add(this.zalogujGosc);
-            this.Controls.Add(this.Hasło);
-            this.Controls.Add(this.Login);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.zaloguj);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MintCream;
+            ClientSize = new Size(807, 602);
+            Controls.Add(panel1);
+            Controls.Add(stworzKonto);
+            Controls.Add(zalogujGosc);
+            Controls.Add(Hasło);
+            Controls.Add(Login);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(zaloguj);
+            Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form1";
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private System.Windows.Forms.Label label1;

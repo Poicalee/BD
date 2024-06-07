@@ -47,10 +47,10 @@ namespace form111
             panel1.BackColor = Color.Teal;
             panel1.Controls.Add(menuButton);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(-5, 0);
-            panel1.Margin = new Padding(4, 3, 4, 3);
+            panel1.Location = new Point(-6, 0);
+            panel1.Margin = new Padding(5, 4, 5, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1121, 81);
+            panel1.Size = new Size(1281, 108);
             panel1.TabIndex = 0;
             // 
             // menuButton
@@ -59,10 +59,10 @@ namespace form111
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
             menuButton.Font = new Font("Microsoft YaHei", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1013, 22);
-            menuButton.Margin = new Padding(2);
+            menuButton.Location = new Point(1125, 29);
+            menuButton.Margin = new Padding(2, 3, 2, 3);
             menuButton.Name = "menuButton";
-            menuButton.Size = new Size(91, 37);
+            menuButton.Size = new Size(104, 49);
             menuButton.TabIndex = 13;
             menuButton.Text = "Menu";
             menuButton.UseVisualStyleBackColor = false;
@@ -71,77 +71,78 @@ namespace form111
             // 
             label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = Color.MintCream;
-            label1.Location = new Point(51, 22);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(58, 29);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(149, 39);
+            label1.Size = new Size(170, 52);
             label1.TabIndex = 0;
             label1.Text = "Biblioteka";
             // 
             // label2
             // 
             label2.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label2.Location = new Point(55, 125);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(63, 167);
+            label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(55, 27);
+            label2.Size = new Size(63, 36);
             label2.TabIndex = 1;
             label2.Text = "Login:\r\n";
             // 
             // label4
             // 
             label4.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            label4.Location = new Point(55, 171);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(63, 228);
+            label4.Margin = new Padding(5, 0, 5, 0);
             label4.Name = "label4";
-            label4.Size = new Size(169, 27);
+            label4.Size = new Size(193, 36);
             label4.TabIndex = 3;
             label4.Text = "Wypożyczone książki:";
             label4.Click += label4_Click;
             // 
             // listViewLogin
             // 
-            listViewLogin.Location = new Point(214, 125);
-            listViewLogin.Margin = new Padding(4, 3, 4, 3);
+            listViewLogin.Location = new Point(245, 167);
+            listViewLogin.Margin = new Padding(5, 4, 5, 4);
             listViewLogin.Name = "listViewLogin";
-            listViewLogin.Size = new Size(168, 22);
+            listViewLogin.Size = new Size(191, 28);
             listViewLogin.TabIndex = 5;
             listViewLogin.UseCompatibleStateImageBehavior = false;
             // 
             // listBox1
             // 
+            listBox1.Font = new Font("Microsoft YaHei", 9.75F);
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(55, 235);
-            listBox1.Margin = new Padding(4, 3, 4, 3);
+            listBox1.ItemHeight = 21;
+            listBox1.Location = new Point(63, 313);
+            listBox1.Margin = new Padding(5, 4, 5, 4);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(969, 409);
+            listBox1.Size = new Size(1107, 529);
             listBox1.TabIndex = 6;
             // 
             // usunKonto
             // 
             usunKonto.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            usunKonto.Location = new Point(892, 144);
-            usunKonto.Margin = new Padding(4, 3, 4, 3);
+            usunKonto.Location = new Point(1019, 192);
+            usunKonto.Margin = new Padding(5, 4, 5, 4);
             usunKonto.Name = "usunKonto";
-            usunKonto.Size = new Size(132, 33);
+            usunKonto.Size = new Size(151, 44);
             usunKonto.TabIndex = 7;
             usunKonto.Text = "Usuń konto";
             usunKonto.UseVisualStyleBackColor = true;
             // 
             // Form4
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(1110, 733);
+            ClientSize = new Size(1265, 972);
             Controls.Add(usunKonto);
             Controls.Add(listBox1);
             Controls.Add(listViewLogin);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(panel1);
-            Margin = new Padding(4, 3, 4, 3);
+            Margin = new Padding(5, 4, 5, 4);
             Name = "Form4";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form4";

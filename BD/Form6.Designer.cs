@@ -31,96 +31,133 @@ namespace form111
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.menuButton = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            label1 = new Label();
+            panel2 = new Panel();
+            menuButton = new Button();
+            UserCRUD = new Button();
+            AuthorCRUD = new Button();
+            KsiazkiCRUD = new Button();
+            PracownikCRUD = new Button();
+            WypozyczenieCRUD = new Button();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-4, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(959, 73);
-            this.panel1.TabIndex = 0;
+            panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(-5, 0);
+            panel1.Margin = new Padding(4, 5, 4, 5);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(804, 97);
+            panel1.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.ForeColor = System.Drawing.Color.MintCream;
-            this.label1.Location = new System.Drawing.Point(39, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 52);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Biblioteka";
+            label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label1.ForeColor = Color.MintCream;
+            label1.Location = new Point(52, 31);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(212, 80);
+            label1.TabIndex = 0;
+            label1.Text = "Biblioteka";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel2.Controls.Add(this.menuButton);
-            this.panel2.Location = new System.Drawing.Point(0, 72);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(956, 54);
-            this.panel2.TabIndex = 1;
+            panel2.BackColor = Color.PaleTurquoise;
+            panel2.Controls.Add(menuButton);
+            panel2.Location = new Point(0, 94);
+            panel2.Margin = new Padding(4, 5, 4, 5);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(799, 79);
+            panel2.TabIndex = 1;
             // 
             // menuButton
             // 
-            this.menuButton.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.menuButton.Location = new System.Drawing.Point(867, 7);
-            this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(70, 36);
-            this.menuButton.TabIndex = 2;
-            this.menuButton.Text = "Menu";
-            this.menuButton.UseVisualStyleBackColor = true;
+            menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            menuButton.Location = new Point(682, 13);
+            menuButton.Margin = new Padding(4, 5, 4, 5);
+            menuButton.Name = "menuButton";
+            menuButton.Size = new Size(93, 55);
+            menuButton.TabIndex = 2;
+            menuButton.Text = "Menu";
+            menuButton.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // UserCRUD
             // 
-            this.panel3.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(103, 179);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(734, 399);
-            this.panel3.TabIndex = 2;
+            UserCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UserCRUD.Location = new Point(58, 202);
+            UserCRUD.Name = "UserCRUD";
+            UserCRUD.Size = new Size(212, 72);
+            UserCRUD.TabIndex = 2;
+            UserCRUD.Text = "Edytuj czytelników";
+            UserCRUD.UseVisualStyleBackColor = true;
+            UserCRUD.Click += UserCRUD_Click;
             // 
-            // label6
+            // AuthorCRUD
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(153, 145);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(405, 110);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Panel admina *do dodania*";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            AuthorCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            AuthorCRUD.Location = new Point(58, 328);
+            AuthorCRUD.Name = "AuthorCRUD";
+            AuthorCRUD.Size = new Size(212, 72);
+            AuthorCRUD.TabIndex = 4;
+            AuthorCRUD.Text = "Edytuj autorów";
+            AuthorCRUD.UseVisualStyleBackColor = true;
+            // 
+            // KsiazkiCRUD
+            // 
+            KsiazkiCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            KsiazkiCRUD.Location = new Point(294, 436);
+            KsiazkiCRUD.Name = "KsiazkiCRUD";
+            KsiazkiCRUD.Size = new Size(212, 72);
+            KsiazkiCRUD.TabIndex = 5;
+            KsiazkiCRUD.Text = "Edytuj książki";
+            KsiazkiCRUD.UseVisualStyleBackColor = true;
+            // 
+            // PracownikCRUD
+            // 
+            PracownikCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PracownikCRUD.Location = new Point(528, 202);
+            PracownikCRUD.Name = "PracownikCRUD";
+            PracownikCRUD.Size = new Size(212, 72);
+            PracownikCRUD.TabIndex = 6;
+            PracownikCRUD.Text = "Edytuj pracowników";
+            PracownikCRUD.UseVisualStyleBackColor = true;
+            // 
+            // WypozyczenieCRUD
+            // 
+            WypozyczenieCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            WypozyczenieCRUD.Location = new Point(528, 328);
+            WypozyczenieCRUD.Name = "WypozyczenieCRUD";
+            WypozyczenieCRUD.Size = new Size(212, 72);
+            WypozyczenieCRUD.TabIndex = 7;
+            WypozyczenieCRUD.Text = "Edytuj wpożyczenia";
+            WypozyczenieCRUD.UseVisualStyleBackColor = true;
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(949, 632);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Name = "Form6";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form6";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MintCream;
+            ClientSize = new Size(800, 563);
+            Controls.Add(WypozyczenieCRUD);
+            Controls.Add(KsiazkiCRUD);
+            Controls.Add(PracownikCRUD);
+            Controls.Add(AuthorCRUD);
+            Controls.Add(UserCRUD);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Margin = new Padding(4, 5, 4, 5);
+            Name = "Form6";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form6";
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ResumeLayout(false);
         }
-
-        private System.Windows.Forms.Label label6;
-
-        private System.Windows.Forms.Panel panel3;
 
         private System.Windows.Forms.Button menuButton;
 
@@ -131,5 +168,11 @@ namespace form111
         private System.Windows.Forms.Panel panel1;
 
         #endregion
+
+        private Button UserCRUD;
+        private Button AuthorCRUD;
+        private Button KsiazkiCRUD;
+        private Button PracownikCRUD;
+        private Button WypozyczenieCRUD;
     }
 }

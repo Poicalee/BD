@@ -41,11 +41,11 @@ namespace form111
                     writer.WriteLine("Password: " + password);
                 }
 
-                MessageBox.Show("Login and password saved to file successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Login i hasło zapisane do pliku", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while saving login and password to file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Wystąpił błąd podczas zapisu loginu i hasła do pliku: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void Form3_Load(object sender, EventArgs e)
