@@ -77,6 +77,7 @@ namespace form111
             kontoButt.TabIndex = 3;
             kontoButt.Text = "Konto";
             kontoButt.UseVisualStyleBackColor = true;
+            kontoButt.Click += kontoButt_Click;
             // 
             // wypozyczKsiazke
             // 

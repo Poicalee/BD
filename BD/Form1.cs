@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Windows.Forms;
-using Npgsql;
 using BD1.Models;
+using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace form111
 {
     public partial class Form1 : Form
     {
+        private readonly PostgresContext context;
+
         public Form1()
         {
             InitializeComponent();
+            context = new PostgresContext(); // Initialize the PostgresContext
+            textBox2.PasswordChar = '*';
         }
 
         private void zalogujGosc_click(object sender, EventArgs e)
@@ -32,13 +37,24 @@ namespace form111
         {
             string login = textBox1.Text;
             string password = textBox2.Text;
+            bool isAdmin;
 
-            if (CheckCredentials(login, password))
+            if (CheckCredentials(login, password, out isAdmin))
             {
                 MessageBox.Show("Logowanie powiodło się", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                Form7 form = new Form7();
-                form.ShowDialog();
+
+                if (isAdmin)
+                {
+                    Form6 form = new Form6();
+                    form.ShowDialog();
+                }
+                else
+                {
+                    Form7 form = new Form7();
+                    form.ShowDialog();
+                }
+
                 this.Close();
             }
             else
@@ -47,23 +63,30 @@ namespace form111
             }
         }
 
-        private bool CheckCredentials(string login, string password)
+        private bool CheckCredentials(string login, string password, out bool isAdmin)
         {
-            string connectionString = "Host=localhost;Username=postgres;Password=Kubek234;Database=postgres";
-            string functionCall = "SELECT check_credentials(@login, @password)";
+            isAdmin = false;
 
             try
             {
-                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                if (login == "admin" && password == "admin")
                 {
-                    connection.Open();
-                    using (NpgsqlCommand command = new NpgsqlCommand(functionCall, connection))
+                    isAdmin = true;
+                    return true;
+                }
+                else
+                {
+                    using (var connection = (NpgsqlConnection)context.Database.GetDbConnection())
                     {
-                        command.Parameters.AddWithValue("@login", login);
-                        command.Parameters.AddWithValue("@password", password);
+                        connection.Open();
+                        using (var command = new NpgsqlCommand("SELECT check_credentials(@login, @password)", connection))
+                        {
+                            command.Parameters.AddWithValue("@login", login);
+                            command.Parameters.AddWithValue("@password", password);
 
-                        bool isValid = (bool)command.ExecuteScalar();
-                        return isValid;
+                            bool isValid = (bool)command.ExecuteScalar();
+                            return isValid;
+                        }
                     }
                 }
             }
@@ -74,19 +97,20 @@ namespace form111
             }
         }
 
+
         private void label1_Click(object sender, EventArgs e)
         {
-
+            // No implementation needed
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            // No implementation needed
         }
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
-
+            // No implementation needed
         }
     }
 }

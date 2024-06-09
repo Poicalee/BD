@@ -105,7 +105,7 @@ namespace form111
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form7 form = new Form7();
+            Form6 form = new Form6();
             form.ShowDialog();
             this.Close();
         }

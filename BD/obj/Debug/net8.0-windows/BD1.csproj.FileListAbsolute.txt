@@ -209,3 +209,7 @@ C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\refint\BD1.dll
 C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.pdb
 C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.genruntimeconfig.cache
 C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\ref\BD1.dll
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form10.resources
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form11.resources
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form8.resources
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form9.resources

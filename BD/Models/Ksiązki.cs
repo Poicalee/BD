@@ -19,7 +19,7 @@ public partial class Ksiązki
 
     public virtual Autor? Author { get; set; }
 
-    public virtual ICollection<Wypożyczenium> Wypożyczenia { get; set; } = new List<Wypożyczenium>();
+    public virtual ICollection<Wypożyczenia> Wypożyczenia { get; set; } = new List<Wypożyczenia>();
 
     public virtual ICollection<Wypożyczenie> Wypożyczenies { get; set; } = new List<Wypożyczenie>();
 }

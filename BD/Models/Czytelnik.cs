@@ -13,7 +13,9 @@ public partial class Czytelnik
 
     public string? ReaderPhone { get; set; }
 
-    public virtual ICollection<Wypożyczenium> Wypożyczenia { get; set; } = new List<Wypożyczenium>();
+    public string? Password { get; set; }
+
+    public virtual ICollection<Wypożyczenia> Wypożyczenia { get; set; } = new List<Wypożyczenia>();
 
     public virtual ICollection<Wypożyczenie> Wypożyczenies { get; set; } = new List<Wypożyczenie>();
 }

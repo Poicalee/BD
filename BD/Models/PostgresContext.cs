@@ -25,7 +25,7 @@ public partial class PostgresContext : DbContext
 
     public virtual DbSet<Wypożyczenie> Wypożyczenies { get; set; }
 
-    public virtual DbSet<Wypożyczenium> Wypożyczenia { get; set; }
+    public virtual DbSet<Wypożyczenia> Wypożyczenia { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -65,6 +65,11 @@ public partial class PostgresContext : DbContext
             entity.Property(e => e.ReaderPhone)
                 .HasMaxLength(20)
                 .HasColumnName("reader_phone");
+            entity.Property(e => e.Password)
+           .HasMaxLength(30)
+           .HasColumnName("password");
+
+
         });
 
         modelBuilder.Entity<Ksiązki>(entity =>
@@ -146,7 +151,7 @@ public partial class PostgresContext : DbContext
                 .HasConstraintName("wypożyczenie_reader_id_fkey");
         });
 
-        modelBuilder.Entity<Wypożyczenium>(entity =>
+        modelBuilder.Entity<Wypożyczenia>(entity =>
         {
             entity.HasKey(e => e.WypId).HasName("wypożyczenia_pkey");
 

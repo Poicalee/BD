@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BD1.Models;
 
-public partial class Wypożyczenium
+public partial class Wypożyczenia
 {
     public int WypId { get; set; }
 

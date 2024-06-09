@@ -18,5 +18,10 @@ namespace form111
             form.ShowDialog();
             this.Close();
         }
+
+        private void kontoButt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
