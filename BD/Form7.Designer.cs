@@ -35,8 +35,6 @@ namespace form111
             label1 = new Label();
             przegladajKsiazki = new Button();
             kontoButt = new Button();
-            wypozyczKsiazke = new Button();
-            info = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -79,32 +77,12 @@ namespace form111
             kontoButt.UseVisualStyleBackColor = true;
             kontoButt.Click += kontoButt_Click;
             // 
-            // wypozyczKsiazke
-            // 
-            wypozyczKsiazke.Location = new Point(86, 219);
-            wypozyczKsiazke.Name = "wypozyczKsiazke";
-            wypozyczKsiazke.Size = new Size(125, 52);
-            wypozyczKsiazke.TabIndex = 4;
-            wypozyczKsiazke.Text = "Wypożycz książkę";
-            wypozyczKsiazke.UseVisualStyleBackColor = true;
-            // 
-            // info
-            // 
-            info.Location = new Point(366, 229);
-            info.Name = "info";
-            info.Size = new Size(125, 42);
-            info.TabIndex = 5;
-            info.Text = "Informacje";
-            info.UseVisualStyleBackColor = true;
-            // 
             // Form7
             // 
             AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
             ClientSize = new Size(600, 366);
-            Controls.Add(info);
-            Controls.Add(wypozyczKsiazke);
             Controls.Add(kontoButt);
             Controls.Add(przegladajKsiazki);
             Controls.Add(panel1);
@@ -117,12 +95,8 @@ namespace form111
             ResumeLayout(false);
         }
 
-        private System.Windows.Forms.Button wypozyczKsiazke;
-
         private System.Windows.Forms.Button przegladajKsiazki;
         private System.Windows.Forms.Button kontoButt;
-
-        private System.Windows.Forms.Button info;
 
         private System.Windows.Forms.Label label1;
 

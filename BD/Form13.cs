@@ -1,23 +1,24 @@
-﻿using BD1.Models;
-using form111;
-using Microsoft.EntityFrameworkCore;
+﻿using form111;
 using Npgsql;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BD1
 {
-    public partial class Form10 : Form
+    public partial class Form13 : Form
     {
-        private readonly PostgresContext context;
         private string connectionString = "Host=localhost;Username=postgres;Password=Kubek234;Database=postgres";
-
-        public Form10()
+        public Form13()
         {
             InitializeComponent();
-            context = new PostgresContext();
+            RefreshListBoxWypozyczenie();
             wypozyczenieDatePicker.Format = DateTimePickerFormat.Custom;
             wypozyczenieDatePicker.CustomFormat = "yyyy-MM-dd";
             zwrotDatePicker.Format = DateTimePickerFormat.Custom;
@@ -25,22 +26,15 @@ namespace BD1
             get_books();
             get_employee();
             get_readers();
-            RefreshListBoxWypozyczenie();
         }
 
         private void menuButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form6 form = new Form6();
+            Form12 form = new Form12();
             form.ShowDialog();
             this.Close();
         }
-
-        private void listBoxWypozyczenie_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void RefreshListBoxWypozyczenie()
         {
             try
@@ -75,64 +69,8 @@ namespace BD1
             {
                 MessageBox.Show("An error occurred while fetching loans: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
-
-
-        private void edytujWypozyczenie_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                // Sprawdź, czy jakiś element jest zaznaczony w listBoxWypozyczenie
-                if (listBoxWypozyczenie.SelectedItem == null)
-                {
-                    MessageBox.Show("Proszę zaznaczyć wypożyczenie do edycji.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Pobierz zaznaczony element z listBoxWypozyczenie
-                string selectedItem = listBoxWypozyczenie.SelectedItem.ToString();
-
-                // Pobierz loanId z zaznaczonego elementu
-                int loanId = int.Parse(selectedItem.Split('-')[0].Trim());
-
-                // Ustal wartość parametru "returned" na podstawie zaznaczonego radioButton
-                bool returned = radioButton1.Checked; // Załóżmy, że radioButton1 oznacza "Nie"
-                if (radioButton2.Checked)
-                    returned = true; // radioButton2 oznacza "Tak"
-
-                // Otwórz połączenie z bazą danych
-                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
-                {
-                    connection.Open();
-
-                    // Utwórz nową komendę, wywołując procedurę EdytujWypozyczenie
-                    using (NpgsqlCommand command = new NpgsqlCommand("EdytujWypozyczenie", connection))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        // Dodaj parametry do komendy
-                        command.Parameters.AddWithValue("@p_loan_id", loanId);
-                        command.Parameters.AddWithValue("@p_returned", returned);
-
-                        // Wykonaj komendę
-                        command.ExecuteNonQuery();
-                    }
-                }
-
-                // Odśwież listę wypożyczeń po edycji
-                RefreshListBoxWypozyczenie();
-
-                // Wyświetl komunikat o sukcesie
-                MessageBox.Show("Wypożyczenie zostało zaktualizowane.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                // Wyświetl komunikat o błędzie
-                MessageBox.Show("Wystąpił błąd podczas edycji wypożyczenia: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-
         private void get_books()
         {
             try
@@ -377,62 +315,6 @@ namespace BD1
             catch (Exception ex)
             {
                 MessageBox.Show("Wystąpił błąd podczas dodawania wypożyczenia: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void UsunWypozyczenie(int loanId)
-        {
-            try
-            {
-                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
-                {
-                    connection.Open();
-
-                    using (NpgsqlCommand command = new NpgsqlCommand("usun_wypozyczenie", connection))
-                    {
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        // Dodanie parametru
-                        command.Parameters.AddWithValue("p_loan_id", NpgsqlTypes.NpgsqlDbType.Integer).Value = loanId;
-
-                        // Wywołanie procedury
-                        command.ExecuteNonQuery();
-                    }
-                }
-
-                MessageBox.Show("Wypożyczenie zostało usunięte.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Wystąpił błąd podczas usuwania wypożyczenia: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void usunWypozyczenie_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Pobierz zaznaczony element z listBoxWypozyczenie
-                string selectedItem = listBoxWypozyczenie.SelectedItem.ToString();
-
-                // Sprawdź czy coś jest zaznaczone
-                if (selectedItem == null)
-                {
-                    MessageBox.Show("Proszę zaznaczyć wypożyczenie do usunięcia.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Pobierz loanId z zaznaczonego elementu
-                int loanId = int.Parse(selectedItem.Split('-')[0].Trim());
-
-                // Wywołaj metodę UsunWypozyczenie z przekazanym loanId
-                UsunWypozyczenie(loanId);
-
-                // Odśwież listę wypożyczeń po usunięciu
-                RefreshListBoxWypozyczenie();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Wystąpił błąd podczas usuwania wypożyczenia: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

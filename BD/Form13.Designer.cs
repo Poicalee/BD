@@ -1,6 +1,6 @@
 ﻿namespace BD1
 {
-    partial class Form10
+    partial class Form13
     {
         /// <summary>
         /// Required designer variable.
@@ -35,8 +35,6 @@
             listBoxWypozyczenie = new ListBox();
             wypozyczenieDatePicker = new DateTimePicker();
             zwrotDatePicker = new DateTimePicker();
-            edytujWypozyczenie = new Button();
-            usunWypozyczenie = new Button();
             label2 = new Label();
             label3 = new Label();
             Ksiazkabox = new ComboBox();
@@ -106,7 +104,6 @@
             listBoxWypozyczenie.Name = "listBoxWypozyczenie";
             listBoxWypozyczenie.Size = new Size(716, 584);
             listBoxWypozyczenie.TabIndex = 4;
-            listBoxWypozyczenie.SelectedIndexChanged += listBoxWypozyczenie_SelectedIndexChanged;
             // 
             // wypozyczenieDatePicker
             // 
@@ -127,30 +124,6 @@
             zwrotDatePicker.Name = "zwrotDatePicker";
             zwrotDatePicker.Size = new Size(270, 25);
             zwrotDatePicker.TabIndex = 9;
-            // 
-            // edytujWypozyczenie
-            // 
-            edytujWypozyczenie.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            edytujWypozyczenie.Location = new Point(46, 527);
-            edytujWypozyczenie.Margin = new Padding(3, 2, 3, 2);
-            edytujWypozyczenie.Name = "edytujWypozyczenie";
-            edytujWypozyczenie.Size = new Size(149, 69);
-            edytujWypozyczenie.TabIndex = 12;
-            edytujWypozyczenie.Text = "Edytuj zaznaczone wypożyczenie";
-            edytujWypozyczenie.UseVisualStyleBackColor = true;
-            edytujWypozyczenie.Click += edytujWypozyczenie_Click_1;
-            // 
-            // usunWypozyczenie
-            // 
-            usunWypozyczenie.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            usunWypozyczenie.Location = new Point(46, 614);
-            usunWypozyczenie.Margin = new Padding(3, 2, 3, 2);
-            usunWypozyczenie.Name = "usunWypozyczenie";
-            usunWypozyczenie.Size = new Size(149, 69);
-            usunWypozyczenie.TabIndex = 13;
-            usunWypozyczenie.Text = "Usuń zaznaczone wypożyczenie";
-            usunWypozyczenie.UseVisualStyleBackColor = true;
-            usunWypozyczenie.Click += usunWypozyczenie_Click;
             // 
             // label2
             // 
@@ -222,7 +195,7 @@
             radioButton2.Text = "Nieoddana";
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // Form10
+            // Form13
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -233,8 +206,6 @@
             Controls.Add(Ksiazkabox);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(usunWypozyczenie);
-            Controls.Add(edytujWypozyczenie);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(zwrotDatePicker);
@@ -243,7 +214,7 @@
             Controls.Add(dodajWypozyczenie);
             Controls.Add(panel1);
             Margin = new Padding(3, 2, 3, 2);
-            Name = "Form10";
+            Name = "Form13";
             Text = "Form10";
             panel1.ResumeLayout(false);
             ResumeLayout(false);
@@ -259,8 +230,6 @@
         private ListBox listBoxWypozyczenie;
         private DateTimePicker wypozyczenieDatePicker;
         private DateTimePicker zwrotDatePicker;
-        private Button edytujWypozyczenie;
-        private Button usunWypozyczenie;
         private Label label2;
         private Label label3;
         private ComboBox Ksiazkabox;

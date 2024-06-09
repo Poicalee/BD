@@ -1,8 +1,6 @@
 ﻿using BD1.Models;
 using form111;
 using Npgsql;
-using Microsoft.EntityFrameworkCore;
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +13,11 @@ using System.Windows.Forms;
 
 namespace BD1
 {
-    public partial class Form9 : Form
+    public partial class Form15 : Form
     {
         private readonly PostgresContext context;
         private string connectionString = "Host=localhost;Username=postgres;Password=Kubek234;Database=postgres";
-        public Form9()
+        public Form15()
         {
             InitializeComponent();
             context = new PostgresContext();
@@ -28,7 +26,7 @@ namespace BD1
         private void menuButton_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            Form6 form = new Form6();
+            Form12 form = new Form12();
             form.ShowDialog();
             this.Close();
         }
@@ -105,7 +103,7 @@ namespace BD1
                 MessageBox.Show("Autor został dodany.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Opcjonalnie, wyczyść pole tekstowe
-           
+
 
                 // Opcjonalnie, odśwież listę autorów
                 RefreshListBoxAutor();
@@ -152,7 +150,7 @@ namespace BD1
                 MessageBox.Show("Please select an author to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
- 
+
         private void EdytujAutora(int authorId, string newAuthorName)
         {
             try
@@ -185,7 +183,7 @@ namespace BD1
         {
             try
             {
-               using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                 {
                     connection.Open();
 
@@ -209,4 +207,3 @@ namespace BD1
         }
     }
 }
-

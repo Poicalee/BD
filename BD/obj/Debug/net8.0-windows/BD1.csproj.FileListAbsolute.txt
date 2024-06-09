@@ -213,3 +213,7 @@ C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form10.resources
 C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form11.resources
 C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form8.resources
 C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form9.resources
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form12.resources
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form13.resources
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\form111.Form14.resources
+C:\Users\Karol\source\repos\BD\BD\obj\Debug\net8.0-windows\BD1.Form15.resources

@@ -148,56 +148,56 @@ namespace BD1
             }
         }
 
-        private void edytujPracownika_Click(object sender, EventArgs e)
-        {
-            try
+            private void edytujPracownika_Click(object sender, EventArgs e)
             {
-                // Sprawdź, czy jakiś element jest zaznaczony
-                if (listBox1.SelectedItem == null)
+                try
                 {
-                    MessageBox.Show("Proszę zaznaczyć pracownika do edycji.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Pobierz zaznaczony element
-                string selectedItem = listBox1.SelectedItem.ToString();
-
-                // Załóżmy, że employeeId jest pierwszym elementem w zaznaczonej linii
-                int employeeId = int.Parse(selectedItem.Split('-')[0].Trim());
-
-                // Pobierz dane z TextBoxów
-                string employeeName = namePracTextBox.Text;
-                string employeePosition = StanowiskoTextBox.Text;
-                decimal employeeSalary = decimal.Parse(pensjaTextBox.Text);
-                string employeeAddress = adresTextBox.Text;
-                string employeePhone = numerKontTextBox.Text;
-
-                using (var connection = (NpgsqlConnection)context.Database.GetDbConnection())
-                {
-                    connection.Open();
-
-                    using (NpgsqlCommand command = new NpgsqlCommand("EdytujPracownika", connection))
+                    // Sprawdź, czy jakiś element jest zaznaczony
+                    if (listBox1.SelectedItem == null)
                     {
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        command.Parameters.AddWithValue("@p_employee_id", employeeId);
-                        command.Parameters.AddWithValue("@p_employee_name", employeeName);
-                        command.Parameters.AddWithValue("@p_employee_position", employeePosition);
-                        command.Parameters.AddWithValue("@p_employee_salary", employeeSalary);
-                        command.Parameters.AddWithValue("@p_employee_address", employeeAddress);
-                        command.Parameters.AddWithValue("@p_employee_phone", employeePhone);
-
-                        command.ExecuteNonQuery();
+                        MessageBox.Show("Proszę zaznaczyć pracownika do edycji.", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
                     }
-                }
 
-                RefreshListBoxPracownicy();
+                    // Pobierz zaznaczony element
+                    string selectedItem = listBox1.SelectedItem.ToString();
+
+                    // Załóżmy, że employeeId jest pierwszym elementem w zaznaczonej linii
+                    int employeeId = int.Parse(selectedItem.Split('-')[0].Trim());
+
+                    // Pobierz dane z TextBoxów
+                    string employeeName = namePracTextBox.Text;
+                    string employeePosition = StanowiskoTextBox.Text;
+                    decimal employeeSalary = decimal.Parse(pensjaTextBox.Text);
+                    string employeeAddress = adresTextBox.Text;
+                    string employeePhone = numerKontTextBox.Text;
+
+                    using (var connection = (NpgsqlConnection)context.Database.GetDbConnection())
+                    {
+                        connection.Open();
+
+                        using (NpgsqlCommand command = new NpgsqlCommand("EdytujPracownika", connection))
+                        {
+                            command.CommandType = CommandType.StoredProcedure;
+
+                            command.Parameters.AddWithValue("@p_employee_id", employeeId);
+                            command.Parameters.AddWithValue("@p_employee_name", employeeName);
+                            command.Parameters.AddWithValue("@p_employee_position", employeePosition);
+                            command.Parameters.AddWithValue("@p_employee_salary", employeeSalary);
+                            command.Parameters.AddWithValue("@p_employee_address", employeeAddress);
+                            command.Parameters.AddWithValue("@p_employee_phone", employeePhone);
+
+                            command.ExecuteNonQuery();
+                        }
+                    }
+
+                    RefreshListBoxPracownicy();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Wystąpił błąd podczas edycji pracownika: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Wystąpił błąd podczas edycji pracownika: " + ex.Message, "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
 
     }

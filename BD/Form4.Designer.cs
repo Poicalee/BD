@@ -36,9 +36,9 @@ namespace form111
             label1 = new Label();
             label2 = new Label();
             label4 = new Label();
-            listViewLogin = new ListView();
             listBox1 = new ListBox();
             usunKonto = new Button();
+            label3 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -99,15 +99,6 @@ namespace form111
             label4.Text = "Wypożyczone książki:";
             label4.Click += label4_Click;
             // 
-            // listViewLogin
-            // 
-            listViewLogin.Location = new Point(214, 125);
-            listViewLogin.Margin = new Padding(4, 3, 4, 3);
-            listViewLogin.Name = "listViewLogin";
-            listViewLogin.Size = new Size(168, 22);
-            listViewLogin.TabIndex = 5;
-            listViewLogin.UseCompatibleStateImageBehavior = false;
-            // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
@@ -117,6 +108,7 @@ namespace form111
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(969, 409);
             listBox1.TabIndex = 6;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // usunKonto
             // 
@@ -129,15 +121,24 @@ namespace form111
             usunKonto.Text = "Usuń konto";
             usunKonto.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            label3.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            label3.Location = new Point(98, 125);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(169, 27);
+            label3.TabIndex = 8;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
             ClientSize = new Size(1110, 733);
+            Controls.Add(label3);
             Controls.Add(usunKonto);
             Controls.Add(listBox1);
-            Controls.Add(listViewLogin);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(panel1);
@@ -152,8 +153,6 @@ namespace form111
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button usunKonto;
 
-        private System.Windows.Forms.ListView listViewLogin;
-
         private System.Windows.Forms.Label label4;
 
         private System.Windows.Forms.Label label2;
@@ -165,5 +164,7 @@ namespace form111
         private System.Windows.Forms.Panel panel1;
 
         #endregion
+
+        private Label label3;
     }
 }
