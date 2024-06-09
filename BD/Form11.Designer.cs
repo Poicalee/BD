@@ -41,12 +41,14 @@
             usunPracownika = new Button();
             listBox1 = new ListBox();
             hasloTextBox = new TextBox();
+            wyloguj = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(wyloguj);
             panel1.Controls.Add(menuButton);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(1, 1);
@@ -60,7 +62,7 @@
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
             menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1140, 15);
+            menuButton.Location = new Point(1018, 15);
             menuButton.Margin = new Padding(2, 3, 2, 3);
             menuButton.Name = "menuButton";
             menuButton.Size = new Size(104, 63);
@@ -173,6 +175,20 @@
             hasloTextBox.TabIndex = 12;
             hasloTextBox.Text = "Hasło (???)";
             // 
+            // wyloguj
+            // 
+            wyloguj.BackColor = Color.MintCream;
+            wyloguj.FlatAppearance.BorderColor = Color.MintCream;
+            wyloguj.FlatStyle = FlatStyle.System;
+            wyloguj.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wyloguj.Location = new Point(1137, 15);
+            wyloguj.Margin = new Padding(2, 3, 2, 3);
+            wyloguj.Name = "wyloguj";
+            wyloguj.Size = new Size(104, 63);
+            wyloguj.TabIndex = 14;
+            wyloguj.Text = "Wyloguj";
+            wyloguj.UseVisualStyleBackColor = false;
+            // 
             // Form11
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -212,5 +228,6 @@
         private Button usunPracownika;
         private ListBox listBox1;
         private TextBox hasloTextBox;
+        private Button wyloguj;
     }
 }

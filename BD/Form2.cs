@@ -187,5 +187,10 @@ namespace form111
         {
 
         }
+
+        private void wyloguj_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

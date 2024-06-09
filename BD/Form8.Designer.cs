@@ -39,12 +39,14 @@
             edytujCzytelnika = new Button();
             usunCzytelnika = new Button();
             listBoxUser = new ListBox();
+            wyloguj = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(wyloguj);
             panel1.Controls.Add(menuButton);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, 1);
@@ -58,7 +60,7 @@
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
             menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1140, 15);
+            menuButton.Location = new Point(1010, 15);
             menuButton.Margin = new Padding(2, 3, 2, 3);
             menuButton.Name = "menuButton";
             menuButton.Size = new Size(104, 63);
@@ -123,7 +125,7 @@
             hasloTextBox.Name = "hasloTextBox";
             hasloTextBox.Size = new Size(186, 30);
             hasloTextBox.TabIndex = 8;
-            hasloTextBox.Text = "Hasło (???)";
+            hasloTextBox.Text = "Hasło";
             // 
             // edytujCzytelnika
             // 
@@ -154,6 +156,20 @@
             listBoxUser.Name = "listBoxUser";
             listBoxUser.Size = new Size(896, 718);
             listBoxUser.TabIndex = 11;
+            // 
+            // wyloguj
+            // 
+            wyloguj.BackColor = Color.MintCream;
+            wyloguj.FlatAppearance.BorderColor = Color.MintCream;
+            wyloguj.FlatStyle = FlatStyle.System;
+            wyloguj.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wyloguj.Location = new Point(1140, 15);
+            wyloguj.Margin = new Padding(2, 3, 2, 3);
+            wyloguj.Name = "wyloguj";
+            wyloguj.Size = new Size(104, 63);
+            wyloguj.TabIndex = 14;
+            wyloguj.Text = "Wyloguj";
+            wyloguj.UseVisualStyleBackColor = false;
             // 
             // Form8
             // 
@@ -190,5 +206,6 @@
         private Button usunCzytelnika;
         private Button menuButton;
         private ListBox listBoxUser;
+        private Button wyloguj;
     }
 }

@@ -39,12 +39,14 @@ namespace form111
             listViewLogin = new ListView();
             listBox1 = new ListBox();
             usunKonto = new Button();
+            wyloguj = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(wyloguj);
             panel1.Controls.Add(menuButton);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-6, 0);
@@ -58,11 +60,11 @@ namespace form111
             menuButton.BackColor = Color.MintCream;
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
-            menuButton.Font = new Font("Microsoft YaHei", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1125, 29);
+            menuButton.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            menuButton.Location = new Point(1009, 18);
             menuButton.Margin = new Padding(2, 3, 2, 3);
             menuButton.Name = "menuButton";
-            menuButton.Size = new Size(104, 49);
+            menuButton.Size = new Size(111, 60);
             menuButton.TabIndex = 13;
             menuButton.Text = "Menu";
             menuButton.UseVisualStyleBackColor = false;
@@ -130,6 +132,20 @@ namespace form111
             usunKonto.Text = "Usuń konto";
             usunKonto.UseVisualStyleBackColor = true;
             // 
+            // wyloguj
+            // 
+            wyloguj.BackColor = Color.MintCream;
+            wyloguj.FlatAppearance.BorderColor = Color.MintCream;
+            wyloguj.FlatStyle = FlatStyle.System;
+            wyloguj.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wyloguj.Location = new Point(1143, 18);
+            wyloguj.Margin = new Padding(2, 3, 2, 3);
+            wyloguj.Name = "wyloguj";
+            wyloguj.Size = new Size(104, 63);
+            wyloguj.TabIndex = 14;
+            wyloguj.Text = "Wyloguj";
+            wyloguj.UseVisualStyleBackColor = false;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -166,5 +182,7 @@ namespace form111
         private System.Windows.Forms.Panel panel1;
 
         #endregion
+
+        private Button wyloguj;
     }
 }

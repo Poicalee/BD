@@ -44,17 +44,19 @@
             usunWypozyczenie = new Button();
             label2 = new Label();
             label3 = new Label();
+            wyloguj = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(wyloguj);
             panel1.Controls.Add(menuButton);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1266, 106);
+            panel1.Size = new Size(1266, 112);
             panel1.TabIndex = 1;
             // 
             // menuButton
@@ -63,7 +65,7 @@
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
             menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1140, 15);
+            menuButton.Location = new Point(998, 26);
             menuButton.Margin = new Padding(2, 3, 2, 3);
             menuButton.Name = "menuButton";
             menuButton.Size = new Size(104, 63);
@@ -75,7 +77,7 @@
             // 
             label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = Color.MintCream;
-            label1.Location = new Point(53, 26);
+            label1.Location = new Point(30, 37);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
             label1.Size = new Size(170, 52);
@@ -215,6 +217,20 @@
             label3.TabIndex = 15;
             label3.Text = "Data zwrotu:";
             // 
+            // wyloguj
+            // 
+            wyloguj.BackColor = Color.MintCream;
+            wyloguj.FlatAppearance.BorderColor = Color.MintCream;
+            wyloguj.FlatStyle = FlatStyle.System;
+            wyloguj.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wyloguj.Location = new Point(1140, 26);
+            wyloguj.Margin = new Padding(2, 3, 2, 3);
+            wyloguj.Name = "wyloguj";
+            wyloguj.Size = new Size(104, 63);
+            wyloguj.TabIndex = 14;
+            wyloguj.Text = "Wyloguj";
+            wyloguj.UseVisualStyleBackColor = false;
+            // 
             // Form10
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -260,5 +276,6 @@
         private Button usunWypozyczenie;
         private Label label2;
         private Label label3;
+        private Button wyloguj;
     }
 }

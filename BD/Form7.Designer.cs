@@ -36,7 +36,7 @@ namespace form111
             przegladajKsiazki = new Button();
             kontoButt = new Button();
             wypozyczKsiazke = new Button();
-            info = new Button();
+            wylogujBttn = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +46,7 @@ namespace form111
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-6, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(956, 73);
+            panel1.Size = new Size(807, 96);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -55,15 +55,15 @@ namespace form111
             label1.ForeColor = Color.MintCream;
             label1.Location = new Point(56, 22);
             label1.Name = "label1";
-            label1.Size = new Size(143, 30);
+            label1.Size = new Size(167, 30);
             label1.TabIndex = 0;
             label1.Text = "Biblioteka";
             // 
             // przegladajKsiazki
             // 
-            przegladajKsiazki.Location = new Point(86, 154);
+            przegladajKsiazki.Location = new Point(118, 374);
             przegladajKsiazki.Name = "przegladajKsiazki";
-            przegladajKsiazki.Size = new Size(125, 42);
+            przegladajKsiazki.Size = new Size(169, 96);
             przegladajKsiazki.TabIndex = 1;
             przegladajKsiazki.Text = "Przeglądaj książki";
             przegladajKsiazki.UseVisualStyleBackColor = true;
@@ -71,38 +71,38 @@ namespace form111
             // 
             // kontoButt
             // 
-            kontoButt.Location = new Point(366, 154);
+            kontoButt.Location = new Point(504, 170);
             kontoButt.Name = "kontoButt";
-            kontoButt.Size = new Size(125, 42);
+            kontoButt.Size = new Size(169, 96);
             kontoButt.TabIndex = 3;
             kontoButt.Text = "Konto";
             kontoButt.UseVisualStyleBackColor = true;
             // 
             // wypozyczKsiazke
             // 
-            wypozyczKsiazke.Location = new Point(86, 219);
+            wypozyczKsiazke.Location = new Point(118, 170);
             wypozyczKsiazke.Name = "wypozyczKsiazke";
-            wypozyczKsiazke.Size = new Size(125, 52);
+            wypozyczKsiazke.Size = new Size(169, 96);
             wypozyczKsiazke.TabIndex = 4;
             wypozyczKsiazke.Text = "Wypożycz książkę";
             wypozyczKsiazke.UseVisualStyleBackColor = true;
             // 
-            // info
+            // wylogujBttn
             // 
-            info.Location = new Point(366, 229);
-            info.Name = "info";
-            info.Size = new Size(125, 42);
-            info.TabIndex = 5;
-            info.Text = "Informacje";
-            info.UseVisualStyleBackColor = true;
+            wylogujBttn.Location = new Point(504, 374);
+            wylogujBttn.Name = "wylogujBttn";
+            wylogujBttn.Size = new Size(169, 96);
+            wylogujBttn.TabIndex = 5;
+            wylogujBttn.Text = "Wyloguj";
+            wylogujBttn.UseVisualStyleBackColor = true;
             // 
             // Form7
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(600, 366);
-            Controls.Add(info);
+            ClientSize = new Size(800, 563);
+            Controls.Add(wylogujBttn);
             Controls.Add(wypozyczKsiazke);
             Controls.Add(kontoButt);
             Controls.Add(przegladajKsiazki);
@@ -121,7 +121,7 @@ namespace form111
         private System.Windows.Forms.Button przegladajKsiazki;
         private System.Windows.Forms.Button kontoButt;
 
-        private System.Windows.Forms.Button info;
+        private System.Windows.Forms.Button wylogujBttn;
 
         private System.Windows.Forms.Label label1;
 

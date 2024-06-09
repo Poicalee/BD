@@ -41,6 +41,7 @@ namespace form111
             panel1 = new Panel();
             label1 = new Label();
             edytujKsiazke = new Button();
+            wyloguj = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -127,7 +128,7 @@ namespace form111
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
             menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1155, 17);
+            menuButton.Location = new Point(1008, 18);
             menuButton.Margin = new Padding(2, 3, 2, 3);
             menuButton.Name = "menuButton";
             menuButton.Size = new Size(104, 63);
@@ -139,6 +140,7 @@ namespace form111
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(wyloguj);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(menuButton);
             panel1.Location = new Point(-5, 0);
@@ -168,6 +170,21 @@ namespace form111
             edytujKsiazke.TabIndex = 14;
             edytujKsiazke.Text = "Edytuj zaznaczoną książkę";
             edytujKsiazke.UseVisualStyleBackColor = true;
+            // 
+            // wyloguj
+            // 
+            wyloguj.BackColor = Color.MintCream;
+            wyloguj.FlatAppearance.BorderColor = Color.MintCream;
+            wyloguj.FlatStyle = FlatStyle.System;
+            wyloguj.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wyloguj.Location = new Point(1145, 18);
+            wyloguj.Margin = new Padding(2, 3, 2, 3);
+            wyloguj.Name = "wyloguj";
+            wyloguj.Size = new Size(104, 63);
+            wyloguj.TabIndex = 13;
+            wyloguj.Text = "Wyloguj";
+            wyloguj.UseVisualStyleBackColor = false;
+            wyloguj.Click += wyloguj_Click;
             // 
             // Form2
             // 
@@ -209,5 +226,6 @@ namespace form111
         private System.Windows.Forms.TextBox textGene;
         private System.Windows.Forms.Button menuButton;
         private Button edytujKsiazke;
+        private Button wyloguj;
     }
 }
