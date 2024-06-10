@@ -15,7 +15,7 @@ using System.Windows.Forms;
 namespace form111
 {
     public partial class Form3 : Form
-{
+    {
         private string connectionString = "Host=localhost;Username=postgres;Password=Kubek234;Database=postgres";
 
         private readonly PostgresContext context;
@@ -44,7 +44,7 @@ namespace form111
             form.ShowDialog();
             this.Close();
         }
-        private void SaveLoginAndPasswordToDatabase(string readerName,string readerAddress,string readerPhone, string password)
+        private void SaveLoginAndPasswordToDatabase(string readerName, string readerAddress, string readerPhone, string password)
         {
 
             try
@@ -81,6 +81,11 @@ namespace form111
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

@@ -2263,23 +2263,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Karol\\.nuget\\packages\\": {},
+    "C:\\Users\\gubbl\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\BD1.csproj",
+      "projectUniqueName": "C:\\Users\\gubbl\\Source\\Repos\\Baza_najbardziej_aktualna\\BD\\BD1.csproj",
       "projectName": "BD1",
-      "projectPath": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\BD1.csproj",
-      "packagesPath": "C:\\Users\\Karol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Karol\\source\\repos\\BD\\BD\\obj\\",
+      "projectPath": "C:\\Users\\gubbl\\Source\\Repos\\Baza_najbardziej_aktualna\\BD\\BD1.csproj",
+      "packagesPath": "C:\\Users\\gubbl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gubbl\\Source\\Repos\\Baza_najbardziej_aktualna\\BD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gubbl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2346,7 +2346,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

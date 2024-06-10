@@ -35,33 +35,35 @@ namespace form111
             label1 = new Label();
             przegladajKsiazki = new Button();
             kontoButt = new Button();
+            wylogujBttn = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(wylogujBttn);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-6, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(956, 73);
+            panel1.Size = new Size(956, 108);
             panel1.TabIndex = 0;
             // 
             // label1
             // 
             label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = Color.MintCream;
-            label1.Location = new Point(56, 22);
+            label1.Location = new Point(45, 32);
             label1.Name = "label1";
-            label1.Size = new Size(143, 30);
+            label1.Size = new Size(172, 30);
             label1.TabIndex = 0;
             label1.Text = "Biblioteka";
             // 
             // przegladajKsiazki
             // 
-            przegladajKsiazki.Location = new Point(86, 154);
+            przegladajKsiazki.Location = new Point(292, 180);
             przegladajKsiazki.Name = "przegladajKsiazki";
-            przegladajKsiazki.Size = new Size(125, 42);
+            przegladajKsiazki.Size = new Size(212, 97);
             przegladajKsiazki.TabIndex = 1;
             przegladajKsiazki.Text = "Przeglądaj książki";
             przegladajKsiazki.UseVisualStyleBackColor = true;
@@ -69,20 +71,31 @@ namespace form111
             // 
             // kontoButt
             // 
-            kontoButt.Location = new Point(366, 154);
+            kontoButt.Location = new Point(292, 384);
             kontoButt.Name = "kontoButt";
-            kontoButt.Size = new Size(125, 42);
+            kontoButt.Size = new Size(212, 97);
             kontoButt.TabIndex = 3;
             kontoButt.Text = "Konto";
             kontoButt.UseVisualStyleBackColor = true;
             kontoButt.Click += kontoButt_Click;
             // 
+            // wylogujBttn
+            // 
+            wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wylogujBttn.Location = new Point(699, 21);
+            wylogujBttn.Margin = new Padding(5);
+            wylogujBttn.Name = "wylogujBttn";
+            wylogujBttn.Size = new Size(93, 63);
+            wylogujBttn.TabIndex = 4;
+            wylogujBttn.Text = "Wyloguj";
+            wylogujBttn.UseVisualStyleBackColor = true;
+            // 
             // Form7
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(10F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(600, 366);
+            ClientSize = new Size(800, 563);
             Controls.Add(kontoButt);
             Controls.Add(przegladajKsiazki);
             Controls.Add(panel1);
@@ -103,5 +116,7 @@ namespace form111
         private System.Windows.Forms.Panel panel1;
 
         #endregion
+
+        private Button wylogujBttn;
     }
 }
