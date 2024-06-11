@@ -205,5 +205,13 @@ namespace BD1
                 MessageBox.Show("An error occurred while deleting author: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void wylogujBttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

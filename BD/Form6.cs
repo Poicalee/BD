@@ -80,5 +80,13 @@ namespace form111
             form.ShowDialog();
             this.Close();
         }
+
+        private void wylogujBttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

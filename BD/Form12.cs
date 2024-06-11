@@ -54,5 +54,12 @@ namespace BD1
             this.Close();
         }
 
+        private void wyloguj_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

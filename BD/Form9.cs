@@ -105,7 +105,7 @@ namespace BD1
                 MessageBox.Show("Autor został dodany.", "Sukces", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Opcjonalnie, wyczyść pole tekstowe
-           
+
 
                 // Opcjonalnie, odśwież listę autorów
                 RefreshListBoxAutor();
@@ -152,7 +152,7 @@ namespace BD1
                 MessageBox.Show("Please select an author to delete.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
- 
+
         private void EdytujAutora(int authorId, string newAuthorName)
         {
             try
@@ -185,7 +185,7 @@ namespace BD1
         {
             try
             {
-               using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+                using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
                 {
                     connection.Open();
 
@@ -206,6 +206,14 @@ namespace BD1
             {
                 MessageBox.Show("An error occurred while deleting author: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void wylogujBttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
+            this.Close();
         }
     }
 }

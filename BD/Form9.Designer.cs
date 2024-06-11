@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            wylogujBttn = new Button();
             menuButton = new Button();
             label1 = new Label();
             nametextBox = new TextBox();
@@ -36,7 +37,6 @@
             edytujAutora = new Button();
             usunAutora = new Button();
             listBox1 = new ListBox();
-            wylogujBttn = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -47,9 +47,25 @@
             panel1.Controls.Add(menuButton);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(1, 1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1266, 103);
+            panel1.Size = new Size(1108, 77);
             panel1.TabIndex = 1;
+            // 
+            // wylogujBttn
+            // 
+            wylogujBttn.BackColor = Color.MintCream;
+            wylogujBttn.FlatAppearance.BorderColor = Color.MintCream;
+            wylogujBttn.FlatStyle = FlatStyle.System;
+            wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wylogujBttn.Location = new Point(1005, 12);
+            wylogujBttn.Margin = new Padding(2, 2, 2, 2);
+            wylogujBttn.Name = "wylogujBttn";
+            wylogujBttn.Size = new Size(91, 47);
+            wylogujBttn.TabIndex = 15;
+            wylogujBttn.Text = "Wyloguj";
+            wylogujBttn.UseVisualStyleBackColor = false;
+            wylogujBttn.Click += wylogujBttn_Click;
             // 
             // menuButton
             // 
@@ -57,10 +73,10 @@
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
             menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1012, 16);
-            menuButton.Margin = new Padding(2, 3, 2, 3);
+            menuButton.Location = new Point(886, 12);
+            menuButton.Margin = new Padding(2, 2, 2, 2);
             menuButton.Name = "menuButton";
-            menuButton.Size = new Size(104, 63);
+            menuButton.Size = new Size(91, 47);
             menuButton.TabIndex = 13;
             menuButton.Text = "Menu";
             menuButton.UseVisualStyleBackColor = false;
@@ -70,28 +86,30 @@
             // 
             label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = Color.MintCream;
-            label1.Location = new Point(53, 27);
-            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Location = new Point(46, 20);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(170, 52);
+            label1.Size = new Size(149, 39);
             label1.TabIndex = 1;
             label1.Text = "Biblioteka";
             // 
             // nametextBox
             // 
             nametextBox.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            nametextBox.Location = new Point(56, 153);
+            nametextBox.Location = new Point(49, 115);
+            nametextBox.Margin = new Padding(3, 2, 3, 2);
             nametextBox.Name = "nametextBox";
-            nametextBox.Size = new Size(169, 30);
+            nametextBox.Size = new Size(148, 25);
             nametextBox.TabIndex = 2;
             nametextBox.Text = "Imię i Nazwisko";
             // 
             // dodajAutora
             // 
             dodajAutora.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dodajAutora.Location = new Point(54, 331);
+            dodajAutora.Location = new Point(47, 248);
+            dodajAutora.Margin = new Padding(3, 2, 3, 2);
             dodajAutora.Name = "dodajAutora";
-            dodajAutora.Size = new Size(170, 91);
+            dodajAutora.Size = new Size(149, 68);
             dodajAutora.TabIndex = 3;
             dodajAutora.Text = "Dodaj autora";
             dodajAutora.UseVisualStyleBackColor = true;
@@ -100,9 +118,10 @@
             // edytujAutora
             // 
             edytujAutora.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            edytujAutora.Location = new Point(56, 483);
+            edytujAutora.Location = new Point(49, 362);
+            edytujAutora.Margin = new Padding(3, 2, 3, 2);
             edytujAutora.Name = "edytujAutora";
-            edytujAutora.Size = new Size(168, 91);
+            edytujAutora.Size = new Size(147, 68);
             edytujAutora.TabIndex = 4;
             edytujAutora.Text = "Edytuj zaznaczonego autora";
             edytujAutora.UseVisualStyleBackColor = true;
@@ -111,9 +130,10 @@
             // usunAutora
             // 
             usunAutora.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            usunAutora.Location = new Point(54, 635);
+            usunAutora.Location = new Point(47, 476);
+            usunAutora.Margin = new Padding(3, 2, 3, 2);
             usunAutora.Name = "usunAutora";
-            usunAutora.Size = new Size(170, 91);
+            usunAutora.Size = new Size(149, 68);
             usunAutora.TabIndex = 5;
             usunAutora.Text = "Usuń zaznaczonego autora";
             usunAutora.UseVisualStyleBackColor = true;
@@ -122,38 +142,27 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(286, 153);
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(250, 115);
+            listBox1.Margin = new Padding(3, 2, 3, 2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(905, 704);
+            listBox1.Size = new Size(792, 529);
             listBox1.TabIndex = 6;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
-            // wylogujBttn
-            // 
-            wylogujBttn.BackColor = Color.MintCream;
-            wylogujBttn.FlatAppearance.BorderColor = Color.MintCream;
-            wylogujBttn.FlatStyle = FlatStyle.System;
-            wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            wylogujBttn.Location = new Point(1149, 16);
-            wylogujBttn.Margin = new Padding(2, 3, 2, 3);
-            wylogujBttn.Name = "wylogujBttn";
-            wylogujBttn.Size = new Size(104, 63);
-            wylogujBttn.TabIndex = 15;
-            wylogujBttn.Text = "Wyloguj";
-            wylogujBttn.UseVisualStyleBackColor = false;
-            // 
             // Form9
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(1265, 917);
+            ClientSize = new Size(1107, 688);
             Controls.Add(listBox1);
             Controls.Add(usunAutora);
             Controls.Add(edytujAutora);
             Controls.Add(dodajAutora);
             Controls.Add(nametextBox);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form9";
             Text = "Form9";
             panel1.ResumeLayout(false);

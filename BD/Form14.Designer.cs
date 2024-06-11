@@ -31,7 +31,6 @@ namespace form111
         private void InitializeComponent()
         {
             txtTitle = new TextBox();
-            txtAuthor = new TextBox();
             txtYear = new TextBox();
             dodajKsiazkeAction = new Button();
             usunKsiazke = new Button();
@@ -39,38 +38,30 @@ namespace form111
             textGene = new TextBox();
             menuButton = new Button();
             panel1 = new Panel();
-            label1 = new Label();
             wylogujBttn = new Button();
+            label1 = new Label();
+            AutorBox = new ComboBox();
+            textBox2 = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // txtTitle
             // 
             txtTitle.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            txtTitle.Location = new Point(41, 184);
-            txtTitle.Margin = new Padding(2, 3, 2, 3);
+            txtTitle.Location = new Point(36, 138);
+            txtTitle.Margin = new Padding(2);
             txtTitle.Name = "txtTitle";
-            txtTitle.Size = new Size(150, 29);
+            txtTitle.Size = new Size(132, 25);
             txtTitle.TabIndex = 0;
             txtTitle.Text = "Tytuł";
-            // 
-            // txtAuthor
-            // 
-            txtAuthor.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            txtAuthor.Location = new Point(41, 252);
-            txtAuthor.Margin = new Padding(2, 3, 2, 3);
-            txtAuthor.Name = "txtAuthor";
-            txtAuthor.Size = new Size(150, 29);
-            txtAuthor.TabIndex = 1;
-            txtAuthor.Text = "Autor";
             // 
             // txtYear
             // 
             txtYear.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            txtYear.Location = new Point(41, 320);
-            txtYear.Margin = new Padding(2, 3, 2, 3);
+            txtYear.Location = new Point(36, 240);
+            txtYear.Margin = new Padding(2);
             txtYear.Name = "txtYear";
-            txtYear.Size = new Size(150, 29);
+            txtYear.Size = new Size(132, 25);
             txtYear.TabIndex = 2;
             txtYear.Text = "Rok wydania";
             // 
@@ -78,10 +69,10 @@ namespace form111
             // 
             dodajKsiazkeAction.FlatStyle = FlatStyle.System;
             dodajKsiazkeAction.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            dodajKsiazkeAction.Location = new Point(41, 476);
-            dodajKsiazkeAction.Margin = new Padding(2, 3, 2, 3);
+            dodajKsiazkeAction.Location = new Point(36, 404);
+            dodajKsiazkeAction.Margin = new Padding(2);
             dodajKsiazkeAction.Name = "dodajKsiazkeAction";
-            dodajKsiazkeAction.Size = new Size(168, 73);
+            dodajKsiazkeAction.Size = new Size(147, 55);
             dodajKsiazkeAction.TabIndex = 3;
             dodajKsiazkeAction.Text = "Dodaj książkę";
             dodajKsiazkeAction.UseVisualStyleBackColor = true;
@@ -89,10 +80,10 @@ namespace form111
             // usunKsiazke
             // 
             usunKsiazke.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            usunKsiazke.Location = new Point(43, 577);
-            usunKsiazke.Margin = new Padding(2, 3, 2, 3);
+            usunKsiazke.Location = new Point(38, 486);
+            usunKsiazke.Margin = new Padding(2);
             usunKsiazke.Name = "usunKsiazke";
-            usunKsiazke.Size = new Size(166, 91);
+            usunKsiazke.Size = new Size(145, 68);
             usunKsiazke.TabIndex = 4;
             usunKsiazke.Text = "Usuń zaznaczoną książkę";
             usunKsiazke.UseVisualStyleBackColor = true;
@@ -101,20 +92,21 @@ namespace form111
             // listBoxBooks
             // 
             listBoxBooks.FormattingEnabled = true;
-            listBoxBooks.Location = new Point(246, 164);
-            listBoxBooks.Margin = new Padding(2, 3, 2, 3);
+            listBoxBooks.ItemHeight = 15;
+            listBoxBooks.Location = new Point(215, 123);
+            listBoxBooks.Margin = new Padding(2);
             listBoxBooks.Name = "listBoxBooks";
-            listBoxBooks.Size = new Size(988, 664);
+            listBoxBooks.Size = new Size(865, 499);
             listBoxBooks.TabIndex = 5;
             listBoxBooks.SelectedIndexChanged += listBoxBooks_SelectedIndexChanged;
             // 
             // textGene
             // 
             textGene.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            textGene.Location = new Point(41, 393);
-            textGene.Margin = new Padding(2, 3, 2, 3);
+            textGene.Location = new Point(36, 295);
+            textGene.Margin = new Padding(2);
             textGene.Name = "textGene";
-            textGene.Size = new Size(150, 29);
+            textGene.Size = new Size(132, 25);
             textGene.TabIndex = 11;
             textGene.Text = "Gatunek";
             textGene.TextChanged += textBox1_TextChanged;
@@ -125,10 +117,10 @@ namespace form111
             menuButton.FlatAppearance.BorderColor = Color.MintCream;
             menuButton.FlatStyle = FlatStyle.System;
             menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(1017, 15);
-            menuButton.Margin = new Padding(2, 3, 2, 3);
+            menuButton.Location = new Point(890, 11);
+            menuButton.Margin = new Padding(2);
             menuButton.Name = "menuButton";
-            menuButton.Size = new Size(104, 63);
+            menuButton.Size = new Size(91, 47);
             menuButton.TabIndex = 12;
             menuButton.Text = "Menu";
             menuButton.UseVisualStyleBackColor = false;
@@ -140,22 +132,11 @@ namespace form111
             panel1.Controls.Add(wylogujBttn);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(menuButton);
-            panel1.Location = new Point(-5, 0);
-            panel1.Margin = new Padding(5, 4, 5, 4);
+            panel1.Location = new Point(-4, 0);
+            panel1.Margin = new Padding(4, 3, 4, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1275, 101);
+            panel1.Size = new Size(1116, 76);
             panel1.TabIndex = 13;
-            // 
-            // label1
-            // 
-            label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(57, 29);
-            label1.Margin = new Padding(5, 0, 5, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(186, 49);
-            label1.TabIndex = 0;
-            label1.Text = "Biblioteka";
             // 
             // wylogujBttn
             // 
@@ -163,29 +144,60 @@ namespace form111
             wylogujBttn.FlatAppearance.BorderColor = Color.MintCream;
             wylogujBttn.FlatStyle = FlatStyle.System;
             wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            wylogujBttn.Location = new Point(1161, 15);
-            wylogujBttn.Margin = new Padding(2, 3, 2, 3);
+            wylogujBttn.Location = new Point(1016, 11);
+            wylogujBttn.Margin = new Padding(2);
             wylogujBttn.Name = "wylogujBttn";
-            wylogujBttn.Size = new Size(104, 63);
+            wylogujBttn.Size = new Size(91, 47);
             wylogujBttn.TabIndex = 15;
             wylogujBttn.Text = "Wyloguj";
             wylogujBttn.UseVisualStyleBackColor = false;
+            wylogujBttn.Click += wylogujBttn_Click;
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(50, 22);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(163, 37);
+            label1.TabIndex = 0;
+            label1.Text = "Biblioteka";
+            // 
+            // AutorBox
+            // 
+            AutorBox.FormattingEnabled = true;
+            AutorBox.Location = new Point(36, 187);
+            AutorBox.Name = "AutorBox";
+            AutorBox.Size = new Size(132, 23);
+            AutorBox.TabIndex = 17;
+            // 
+            // textBox2
+            // 
+            textBox2.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            textBox2.Location = new Point(36, 346);
+            textBox2.Margin = new Padding(2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(132, 25);
+            textBox2.TabIndex = 18;
+            textBox2.Text = "Półka";
             // 
             // Form14
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(1271, 917);
+            ClientSize = new Size(1112, 688);
+            Controls.Add(textBox2);
+            Controls.Add(AutorBox);
             Controls.Add(panel1);
             Controls.Add(textGene);
             Controls.Add(listBoxBooks);
             Controls.Add(usunKsiazke);
             Controls.Add(dodajKsiazkeAction);
             Controls.Add(txtYear);
-            Controls.Add(txtAuthor);
             Controls.Add(txtTitle);
-            Margin = new Padding(2, 3, 2, 3);
+            Margin = new Padding(2);
             Name = "Form14";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Biblioteka";
@@ -199,7 +211,6 @@ namespace form111
         private System.Windows.Forms.Panel panel1;
 
         private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.TextBox txtAuthor;
         private System.Windows.Forms.TextBox txtYear;
         private System.Windows.Forms.Button dodajKsiazkeAction;
         private System.Windows.Forms.Button usunKsiazke;
@@ -210,5 +221,7 @@ namespace form111
         private System.Windows.Forms.TextBox textGene;
         private System.Windows.Forms.Button menuButton;
         private Button wylogujBttn;
+        private ComboBox AutorBox;
+        private TextBox textBox2;
     }
 }

@@ -130,6 +130,7 @@
             wyloguj.TabIndex = 13;
             wyloguj.Text = "Wyloguj";
             wyloguj.UseVisualStyleBackColor = true;
+            wyloguj.Click += wyloguj_Click;
             // 
             // Form12
             // 

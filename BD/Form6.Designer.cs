@@ -32,14 +32,14 @@ namespace form111
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            label1 = new Label();
+            wylogujBttn = new Button();
             menuButton = new Button();
+            label1 = new Label();
             UserCRUD = new Button();
             AuthorCRUD = new Button();
             KsiazkiCRUD = new Button();
             PracownikCRUD = new Button();
             WypozyczenieCRUD = new Button();
-            wylogujBttn = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,40 +49,53 @@ namespace form111
             panel1.Controls.Add(wylogujBttn);
             panel1.Controls.Add(menuButton);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(-5, 0);
-            panel1.Margin = new Padding(5, 5, 5, 5);
+            panel1.Location = new Point(-4, 0);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(805, 102);
+            panel1.Size = new Size(704, 76);
             panel1.TabIndex = 0;
+            // 
+            // wylogujBttn
+            // 
+            wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wylogujBttn.Location = new Point(611, 15);
+            wylogujBttn.Margin = new Padding(4, 4, 4, 4);
+            wylogujBttn.Name = "wylogujBttn";
+            wylogujBttn.Size = new Size(81, 47);
+            wylogujBttn.TabIndex = 3;
+            wylogujBttn.Text = "Wyloguj";
+            wylogujBttn.UseVisualStyleBackColor = true;
+            wylogujBttn.Click += wylogujBttn_Click;
+            // 
+            // menuButton
+            // 
+            menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            menuButton.Location = new Point(501, 13);
+            menuButton.Margin = new Padding(4, 4, 4, 4);
+            menuButton.Name = "menuButton";
+            menuButton.Size = new Size(81, 47);
+            menuButton.TabIndex = 2;
+            menuButton.Text = "Menu";
+            menuButton.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.Font = new Font("Microsoft YaHei", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 238);
             label1.ForeColor = Color.MintCream;
-            label1.Location = new Point(53, 31);
-            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Location = new Point(46, 23);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(213, 80);
+            label1.Size = new Size(186, 60);
             label1.TabIndex = 0;
             label1.Text = "Biblioteka";
-            // 
-            // menuButton
-            // 
-            menuButton.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            menuButton.Location = new Point(573, 17);
-            menuButton.Margin = new Padding(5, 5, 5, 5);
-            menuButton.Name = "menuButton";
-            menuButton.Size = new Size(93, 63);
-            menuButton.TabIndex = 2;
-            menuButton.Text = "Menu";
-            menuButton.UseVisualStyleBackColor = true;
             // 
             // UserCRUD
             // 
             UserCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            UserCRUD.Location = new Point(55, 177);
+            UserCRUD.Location = new Point(48, 133);
+            UserCRUD.Margin = new Padding(3, 2, 3, 2);
             UserCRUD.Name = "UserCRUD";
-            UserCRUD.Size = new Size(213, 72);
+            UserCRUD.Size = new Size(186, 54);
             UserCRUD.TabIndex = 2;
             UserCRUD.Text = "Edytuj czytelników";
             UserCRUD.UseVisualStyleBackColor = true;
@@ -91,9 +104,10 @@ namespace form111
             // AuthorCRUD
             // 
             AuthorCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            AuthorCRUD.Location = new Point(55, 302);
+            AuthorCRUD.Location = new Point(48, 226);
+            AuthorCRUD.Margin = new Padding(3, 2, 3, 2);
             AuthorCRUD.Name = "AuthorCRUD";
-            AuthorCRUD.Size = new Size(213, 72);
+            AuthorCRUD.Size = new Size(186, 54);
             AuthorCRUD.TabIndex = 4;
             AuthorCRUD.Text = "Edytuj autorów";
             AuthorCRUD.UseVisualStyleBackColor = true;
@@ -102,9 +116,10 @@ namespace form111
             // KsiazkiCRUD
             // 
             KsiazkiCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            KsiazkiCRUD.Location = new Point(291, 410);
+            KsiazkiCRUD.Location = new Point(255, 308);
+            KsiazkiCRUD.Margin = new Padding(3, 2, 3, 2);
             KsiazkiCRUD.Name = "KsiazkiCRUD";
-            KsiazkiCRUD.Size = new Size(213, 72);
+            KsiazkiCRUD.Size = new Size(186, 54);
             KsiazkiCRUD.TabIndex = 5;
             KsiazkiCRUD.Text = "Edytuj książki";
             KsiazkiCRUD.UseVisualStyleBackColor = true;
@@ -113,9 +128,10 @@ namespace form111
             // PracownikCRUD
             // 
             PracownikCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            PracownikCRUD.Location = new Point(525, 177);
+            PracownikCRUD.Location = new Point(459, 133);
+            PracownikCRUD.Margin = new Padding(3, 2, 3, 2);
             PracownikCRUD.Name = "PracownikCRUD";
-            PracownikCRUD.Size = new Size(213, 72);
+            PracownikCRUD.Size = new Size(186, 54);
             PracownikCRUD.TabIndex = 6;
             PracownikCRUD.Text = "Edytuj pracowników";
             PracownikCRUD.UseVisualStyleBackColor = true;
@@ -124,38 +140,28 @@ namespace form111
             // WypozyczenieCRUD
             // 
             WypozyczenieCRUD.Font = new Font("Microsoft YaHei", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            WypozyczenieCRUD.Location = new Point(525, 302);
+            WypozyczenieCRUD.Location = new Point(459, 226);
+            WypozyczenieCRUD.Margin = new Padding(3, 2, 3, 2);
             WypozyczenieCRUD.Name = "WypozyczenieCRUD";
-            WypozyczenieCRUD.Size = new Size(213, 72);
+            WypozyczenieCRUD.Size = new Size(186, 54);
             WypozyczenieCRUD.TabIndex = 7;
             WypozyczenieCRUD.Text = "Edytuj wpożyczenia";
             WypozyczenieCRUD.UseVisualStyleBackColor = true;
             WypozyczenieCRUD.Click += WypozyczenieCRUD_Click_1;
             // 
-            // wylogujBttn
-            // 
-            wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            wylogujBttn.Location = new Point(698, 20);
-            wylogujBttn.Margin = new Padding(5);
-            wylogujBttn.Name = "wylogujBttn";
-            wylogujBttn.Size = new Size(93, 63);
-            wylogujBttn.TabIndex = 3;
-            wylogujBttn.Text = "Wyloguj";
-            wylogujBttn.UseVisualStyleBackColor = true;
-            // 
             // Form6
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
-            ClientSize = new Size(800, 563);
+            ClientSize = new Size(700, 422);
             Controls.Add(WypozyczenieCRUD);
             Controls.Add(KsiazkiCRUD);
             Controls.Add(PracownikCRUD);
             Controls.Add(AuthorCRUD);
             Controls.Add(UserCRUD);
             Controls.Add(panel1);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Form6";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form6";

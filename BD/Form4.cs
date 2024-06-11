@@ -17,7 +17,7 @@ namespace form111
         public Form4(string login) : this()
         {
             this.login = login;
-            label3.Text = "" + login;
+            label2.Text = "" + login;
 
             // Wyświetlanie wypożyczonych książek dla danego użytkownika
             ShowUserLoans(login);
@@ -60,6 +60,19 @@ namespace form111
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Obsługa zdarzenia zmiany zaznaczenia w listBox
+        }
+
+        private void wylogujBttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
+            this.Close();
+        }
+
+        private void usunKonto_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

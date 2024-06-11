@@ -29,5 +29,13 @@ namespace form111
             Form4 form4 = new Form4(login);
             form4.ShowDialog();
         }
+
+        private void wylogujBttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
+            this.Close();
+        }
     }
 }

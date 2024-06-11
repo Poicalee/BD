@@ -32,10 +32,10 @@ namespace form111
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            wylogujBttn = new Button();
             label1 = new Label();
             przegladajKsiazki = new Button();
             kontoButt = new Button();
-            wylogujBttn = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -48,6 +48,18 @@ namespace form111
             panel1.Name = "panel1";
             panel1.Size = new Size(956, 108);
             panel1.TabIndex = 0;
+            // 
+            // wylogujBttn
+            // 
+            wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            wylogujBttn.Location = new Point(699, 21);
+            wylogujBttn.Margin = new Padding(5);
+            wylogujBttn.Name = "wylogujBttn";
+            wylogujBttn.Size = new Size(93, 63);
+            wylogujBttn.TabIndex = 4;
+            wylogujBttn.Text = "Wyloguj";
+            wylogujBttn.UseVisualStyleBackColor = true;
+            wylogujBttn.Click += wylogujBttn_Click;
             // 
             // label1
             // 
@@ -79,20 +91,9 @@ namespace form111
             kontoButt.UseVisualStyleBackColor = true;
             kontoButt.Click += kontoButt_Click;
             // 
-            // wylogujBttn
-            // 
-            wylogujBttn.Font = new Font("Microsoft YaHei", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            wylogujBttn.Location = new Point(699, 21);
-            wylogujBttn.Margin = new Padding(5);
-            wylogujBttn.Name = "wylogujBttn";
-            wylogujBttn.Size = new Size(93, 63);
-            wylogujBttn.TabIndex = 4;
-            wylogujBttn.Text = "Wyloguj";
-            wylogujBttn.UseVisualStyleBackColor = true;
-            // 
             // Form7
             // 
-            AutoScaleDimensions = new SizeF(10F, 21F);
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.MintCream;
             ClientSize = new Size(800, 563);
